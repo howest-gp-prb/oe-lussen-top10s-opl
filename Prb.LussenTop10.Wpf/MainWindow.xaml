@@ -1,0 +1,21 @@
+﻿<Window x:Class="Prb.LussenTop10.Wpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Prb.LussenTop10.Wpf"
+        mc:Ignorable="d"
+        Title="Mijn top 10s" Height="493" Width="453" Loaded="Window_Loaded">
+    <Grid>
+        <Label x:Name="lblStats" Content="0/10" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="48"/>
+        <ComboBox x:Name="cmbCategory" HorizontalAlignment="Left" Height="26" Margin="81,10,0,0" VerticalAlignment="Top" Width="290" SelectionChanged="cmbCategory_SelectionChanged"/>
+        <ListBox x:Name="lstTop10s" HorizontalAlignment="Left" Height="332" Margin="16,49,0,0" VerticalAlignment="Top" Width="355"/>
+        <TextBox x:Name="txtNewItem" HorizontalAlignment="Left" Height="28" Margin="16,386,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="253"/>
+        <Button x:Name="btnAdd" Content="Voeg toe" HorizontalAlignment="Left" Margin="274,386,0,0" VerticalAlignment="Top" Height="28" Width="97" Click="btnAdd_Click"/>
+        <Label x:Name="lblError" Content="hier komt een foutmelding" Background="LightPink" Foreground="red"  HorizontalAlignment="Left" Height="38" Margin="16,419,0,0" VerticalAlignment="Top" Width="355"/>
+        <Button x:Name="btnUp" Content="5" HorizontalAlignment="Left" ToolTip="verplaats naar boven" Height="30" Margin="389,108,0,0" VerticalAlignment="Top" Width="40" FontFamily="Webdings" Click="btnUp_Click"/>
+        <Button x:Name="btnDown" Content="6" HorizontalAlignment="Left" ToolTip="Verplaats naar onderen" Height="30" Margin="389,143,0,0" VerticalAlignment="Top" Width="40" FontFamily="Webdings" Click="btnDown_Click"/>
+        <Button x:Name="btnDelete" Content="r" Foreground="Tomato" ToolTip="Verwijder" HorizontalAlignment="Left" Height="30" Margin="389,178,0,0" VerticalAlignment="Top" Width="40" FontFamily="Webdings" Click="btnDelete_Click"/>
+
+    </Grid>
+</Window>
